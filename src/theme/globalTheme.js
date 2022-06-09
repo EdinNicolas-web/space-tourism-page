@@ -11,6 +11,9 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    .bold{
+        font-weight: bold;
+    }
     .heading_one, 
     .heading_two, 
     .heading_three, 
@@ -52,6 +55,12 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 16px; 
         color: var(--white);
         letter-spacing: 2.7px;
+    }
+    .body_text{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 18px;
+        color: var(--white);
+        line-height: 32px;
     }
     
 `;

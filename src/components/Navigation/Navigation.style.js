@@ -32,4 +32,22 @@ export const SRightSection = styled.div`
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5px);
   z-index: 1;
+  display: flex;
+  .active {
+    border-bottom: 3px solid white;
+  }
+`;
+
+export const SItemMenu = styled.div`
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 5px;
+  transition: all ease 0.2s;
+  &:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+  }
 `;
