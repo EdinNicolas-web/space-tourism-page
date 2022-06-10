@@ -1,13 +1,19 @@
-import Home from "./components/Home/Home";
+// router
+import { BrowserRouter as Router } from "react-router-dom";
 
 // theme
 import { GlobalStyle } from "../src/theme/globalTheme";
 
+// components
+import AnimatedRoutes from "./components/Routes/AnimatedRoutes";
+
 function App() {
   return (
-    <> 
-      <GlobalStyle />
-      <Home />
+    <>
+      <Router>
+        <GlobalStyle />
+        <AnimatedRoutes />
+      </Router>
     </>
   );
 }

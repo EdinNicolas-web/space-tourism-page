@@ -12,6 +12,7 @@ export const SLeftSection = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
 `;
 
 export const SLogo = styled.img`
@@ -24,6 +25,8 @@ export const SDivider = styled.hr`
   height: 1px;
   opacity: 0.25;
   z-index: 10;
+  position: absolute;
+  left: 100%;
 `;
 
 export const SRightSection = styled.div`
@@ -36,6 +39,8 @@ export const SRightSection = styled.div`
   .active {
     border-bottom: 3px solid white;
   }
+  display: flex;
+  justify-content: center;
 `;
 
 export const SItemMenu = styled.div`
