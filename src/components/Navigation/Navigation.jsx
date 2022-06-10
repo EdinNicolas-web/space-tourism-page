@@ -21,8 +21,6 @@ const Navigation = () => {
     navigate(item);
   };
 
-  console.log(location);
-
   return (
     <SNavigation>
       <SLeftSection>
@@ -45,7 +43,7 @@ const Navigation = () => {
           <p className="nav_text">DESTINATION</p>
         </SItemMenu>
         <SItemMenu
-          className={location.pathname === "crew" ? "active" : ""}
+          className={location.pathname === "/crew" ? "active" : ""}
           onClick={() => handleSelectItem("/crew")}
         >
           <p className="nav_text bold">02</p>
